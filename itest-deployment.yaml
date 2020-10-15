@@ -1,0 +1,24 @@
+kind: Deployment
+apiVersion: apps/v1
+
+metadata:
+  name: itest-deployment
+  namespace: itest-namespace
+  labels:
+    app: itest-app
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: itest-app
+  template:
+    metadata:
+      labels:
+        app: itest-app
+    spec:
+      containers:
+      - name: itest-container
+        image: itest-image:v1
+        ports:
+        - containerPort: 80

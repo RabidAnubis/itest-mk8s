@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1
+
+metadata:
+  name: itest-service
+  namespace: itest-namespace
+
+spec:
+  ports:
+  - port: 30005
+    targetPort: 80
+    protocol: TCP
+    name: http
+  selector:
+    app: itest-app
+

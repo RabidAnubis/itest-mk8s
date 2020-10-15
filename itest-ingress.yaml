@@ -1,0 +1,21 @@
+kind: Ingress
+apiVersion: networking.k8s.io/v1beta1
+
+metadata:
+ name: itest-ingress
+ namespace: itest-namespace
+
+spec:
+  tls:
+  - hosts: 
+    - itest.net
+    secretName: itest-secret-tls
+  rules:
+  - host: itest.net 
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: itest-service
+          servicePort: 30005
+       
