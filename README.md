@@ -1,14 +1,14 @@
-**WORKSHOP: Add domain names over https to your Kubernetes application**
+# WORKSHOP: Add domain names over https to your Kubernetes application
 
 [Lee Bowie](https://www.linkedin.com/in/lee-bowie/), IBM Technology Evangelist, main presenter
 
 [Fraser Anderson](https://www.linkedin.com/in/fraser-anderson-ottawa/), IBM Global Elite, documentation
 
-**Presentation:**
+## Presentation:
 
 The associated presentation is available as [Google Slides](https://ibm.biz/itest-mk8s).
 
-**Prerequisites:**
+## Prerequisites:
 
 The following applications must be installed:
 
@@ -19,7 +19,7 @@ The following applications must be installed:
 
 After installing the prerequisites, extract the workshop files to a folder on your computer.
 
-**Steps:**
+## Steps:
 
  1. Open a Command Prompt and navigate to the folder containing the extracted files.
  
