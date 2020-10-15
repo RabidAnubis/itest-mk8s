@@ -24,12 +24,15 @@ After installing the prerequisites, extract the workshop files to a folder on yo
  1. Open a Command Prompt and navigate to the folder containing the extracted files.
  
  2. Start Minikube with the command
+        
         minikube start
  
  3. Enable the Ingress addon with the command
+        
         minikube addons enable ingress
  
  4. Set your Docker environment to point to the Minikube Docker. Enter the command
+        
         minikube docker-env
         
  5. After the command has run, instructions are given to point your minikube's docker daemon, for example
