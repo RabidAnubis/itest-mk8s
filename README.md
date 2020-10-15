@@ -74,7 +74,12 @@ After installing the prerequisites, extract the workshop files to a folder on yo
     
 12. Now it's time to secure our environment. Run the command 
     
-        openssl req -newkey rsa:2048 -x509 -sha256 -days 3650 -nodes -out tls.crt -keyout tls.key | base64 -w0
+        openssl req -newkey rsa:2048 -x509 -sha256 -days 3650 -nodes -out tls.crt -keyout tls.key
+        
+    Then type it out the tls files on the command line with no carridge feeds and paste those into your secret yaml file
+        
+        more tls.crt  | base64 -w0
+        more tls.key  | base64 -w0
         
 13.  When prompted, enter the Country Name, State or Province Name, City, Organization Name, Organizational Unit Name, Common Name and Email address. Two files are created, *tls.crt* and *tls.key*.
 
