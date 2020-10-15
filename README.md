@@ -43,7 +43,7 @@ After installing the prerequisites, extract the workshop files to a folder on yo
     
  6. The next step is to define a namespace. The namescapce contains the API pod, the Database pod and the App pod. Enter the command
  
-        kubectl apply -f itest -namespace.yaml
+        kubectl apply -f itest-namespace.yaml
 
     A message appears stating that the itest-namespace is created
     
